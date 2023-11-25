@@ -1,10 +1,16 @@
 <div class="header">
   <div class="left-side">
     <span class="material-icons"> grid_view </span>
-    <span class="route-text">BGC Company Admin/HomePage</span>
+    <span class="route-text"
+      >BGC Company Admin/{{
+        isDashboardRoute() ? "Dashboard" : "HomePage"
+      }}</span
+    >
   </div>
   <div class="right-side">
-    <span class="material-icons"> search </span>
+    <span class="material-icons">
+      {{ isDashboardRoute() ? "open_in_full" : "search" }}
+    </span>
     <div class="user-log">
       <span class="material-icons"> help </span>
       <span>Sign in</span>

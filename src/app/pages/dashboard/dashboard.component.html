@@ -72,69 +72,21 @@
         <span class="material-icons"> more_vert </span>
       </div>
       <div class="dashboard-data">
-        <div class="box">
-          <span class="total">80</span>
-          <span class="total-info">Cases with alerts</span>
-          <div class="details">
-            INSUFFICIENCY, VERIFICATION ALERTS & EXCEPTIONAL APPROVAL
-          </div>
-        </div>
-        <div class="box">
-          <span class="total">300</span>
-          <span class="total-info">Active Cases</span>
-          <div class="details">ALL OPEN & ON-HOLD CASES</div>
-        </div>
-        <div class="box">
-          <span class="total">20</span>
-          <span class="total-info">Unclaimed Cases</span>
-          <div class="details">CASES WHICH ARE NOT CLAIMED BY THE AGENTS</div>
-        </div>
-        <div class="box">
-          <span class="total">80</span>
-          <span class="total-info">New Reports</span>
-          <div class="details">CASES WITH NEW REPORTS UPLOADED</div>
+        <div class="box" *ngFor="let item of dashboardData">
+          <span class="total">{{ item.total }}</span>
+          <span class="total-info">{{ item.totalInfo }}</span>
+          <div class="details">{{ item.details }}</div>
         </div>
       </div>
       <div class="attention-cases">
         <span class="section-title">NEEDS ATTENTION</span>
         <div class="cases-issue">
-          <div class="issue">
+          <div class="issue" *ngFor="let item of attentionCasesData">
             <div class="left">
-              <span class="total">40</span>
+              <span class="total">{{ item.total }}</span>
               <div class="issue-details">
-                <span class="heading">Insufficiency Cases</span>
-                <span class="heading-info"
-                  >Cases where insufficient raised</span
-                >
-              </div>
-            </div>
-            <div class="right">
-              <span class="cases-link">View Cases</span>
-            </div>
-          </div>
-          <div class="issue">
-            <div class="left">
-              <span class="total">20</span>
-              <div class="issue-details">
-                <span class="heading">Verification Alerts</span>
-                <span class="heading-info"
-                  >Cases with verification status orange & red</span
-                >
-              </div>
-            </div>
-            <div class="right">
-              <span class="cases-link">View Cases</span>
-            </div>
-          </div>
-          <div class="issue">
-            <div class="left">
-              <span class="total">20</span>
-              <div class="issue-details">
-                <span class="heading">Missing Documents</span>
-                <span class="heading-info"
-                  >List of all the employees where documents are not
-                  submitted</span
-                >
+                <span class="heading">{{ item.heading }}</span>
+                <span class="heading-info">{{ item.headingInfo }}</span>
               </div>
             </div>
             <div class="right">
