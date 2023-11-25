@@ -1,0 +1,19 @@
+<div class="homepage-background">
+  <div class="allCards-info">
+    <p class="total-cards">{{ cards.length }} Screens</p>
+    <p class="last-updated">Link Updated: Jul 30, 2020 at 11:39 AM</p>
+  </div>
+  <div class="homepage-cards">
+    <mat-card *ngFor="let card of cards" class="example-card">
+      <a class="custom-link">
+        <div class="post-image">
+          <img mat-card-image [src]="card.imageUrl" class="card-image" />
+        </div>
+        <div class="card-title">
+          <p class="title">{{ card.title }}</p>
+          <span class="material-icons"> account_tree </span>
+        </div>
+      </a>
+    </mat-card>
+  </div>
+</div>

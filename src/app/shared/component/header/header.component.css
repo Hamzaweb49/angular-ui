@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 7px 10px;
+    box-shadow: 0px 1px 1px 0px rgba(174, 174, 174, 0.75);
+-webkit-box-shadow: 0px 1px 1px 0px rgba(174, 174, 174, 0.75);
+-moz-box-shadow: 0px 1px 1px 0px rgba(174, 174, 174, 0.75);
+}
+
+.header .left-side{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .left-side span, .header .right-side span{
+    color: gray;
+}
+
+.header .right-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .right-side .user-log{
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
