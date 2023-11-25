@@ -1,5 +1,3 @@
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -22,15 +20,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { PagesRoutingModule } from './pages/pages-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PagesRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
     FormsModule,
@@ -52,6 +49,6 @@ import { AppComponent } from './app.component';
     MatCheckboxModule,
   ],
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
