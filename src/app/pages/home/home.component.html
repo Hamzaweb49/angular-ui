@@ -5,7 +5,7 @@
   </div>
   <div class="homepage-cards">
     <mat-card *ngFor="let card of cards" class="example-card">
-      <a class="custom-link">
+      <a class="custom-link" [routerLink]="'/dashboard'">
         <div class="post-image">
           <img mat-card-image [src]="card.imageUrl" class="card-image" />
         </div>

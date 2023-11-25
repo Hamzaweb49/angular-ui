@@ -1,3 +1,4 @@
+
 .screen-background {
   display: flex;
   flex-direction: column;
@@ -10,12 +11,17 @@
   background-color: rgb(245, 245, 245);
 }
 
+.material-icons{
+  cursor: pointer;
+}
+
 .dashboard-screen{
   min-height: calc(100vh - 12rem);
   min-width: 100%;
   border: 1px solid rgb(191, 191, 191);
   margin-bottom: 10px;
   display: flex;
+  position: relative;
 }
 
 .dashboard-screen .menu{
@@ -23,13 +29,27 @@
   background-color: rgb(79, 79, 236);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 7px;
   color: white;
 }
 
-.dashboard-screen .menu .top-icons{
+.dashboard-screen .expandable-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17rem;
+  z-index: 10;
+  background-color: rgb(79, 79, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  height: 100%;
+}
+
+.dashboard-screen .menu .top-icons, .dashboard-screen .expandable-menu .top-icons{
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -40,6 +60,14 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  padding-bottom: 10px;
+}
+
+.dashboard-screen .expandable-menu .top-icons .upper-icons{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   border-bottom: 1px solid rgb(245, 245, 245);
   padding-bottom: 10px;
 }
@@ -55,6 +83,12 @@
   align-items: center;
 }
 
+.dashboard-screen .expandable-menu .top-icons .lower-icons{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .dashboard-screen .menu .bottom-icons{
   display: flex;
   flex-direction: column;
@@ -62,6 +96,18 @@
   gap: 12px;
 }
 
+.dashboard-screen .expandable-menu .bottom-icons{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
 
 
 .dashboard-screen .main-screen{

@@ -1,3 +1,5 @@
+
+
 .homepage-background {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,10 @@
   min-width: 100% !important;
   padding: 20px 30px;
   background-color: rgb(245, 245, 245);
+}
+
+.material-icons{
+  cursor: pointer;
 }
 
 .allCards-info{

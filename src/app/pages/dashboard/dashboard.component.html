@@ -3,7 +3,9 @@
     <div class="menu">
       <div class="top-icons">
         <div class="upper-icons">
-          <span class="material-icons mb-10"> menu </span>
+          <span class="material-icons mb-10 menu-btn" (click)="toggleMenu()">
+            menu
+          </span>
           <span class="material-icons"> home </span>
           <span class="material-icons"> view_list </span>
         </div>
@@ -22,41 +24,43 @@
     <div class="expandable-menu" *ngIf="isMenuExpanded">
       <div class="top-icons">
         <div class="upper-icons">
-          <span class="material-icons mb-10"> menu </span>
-          <div class="home">
+          <span class="material-icons mb-10" (click)="toggleMenu()">
+            close
+          </span>
+          <div class="d-flex">
             <span class="material-icons"> home </span>
             <span>Home</span>
           </div>
-          <div class="additional-options">
+          <div class="d-flex">
             <span class="material-icons"> view_list </span>
             <span>More Options</span>
           </div>
         </div>
         <div class="lower-icons">
-          <div class="groups">
+          <div class="d-flex">
             <span class="material-icons"> groups </span>
             <span>Team</span>
           </div>
-          <div class="checklist">
+          <div class="d-flex">
             <span class="material-icons"> checklist </span>
             <span>Tasks</span>
           </div>
-          <div class="sync">
+          <div class="d-flex">
             <span class="material-icons"> sync_alt </span>
             <span>Sync</span>
           </div>
         </div>
       </div>
       <div class="bottom-icons">
-        <div class="work">
+        <div class="d-flex">
           <span class="material-icons"> work </span>
           <span>Work</span>
         </div>
-        <div class="account">
+        <div class="d-flex">
           <span class="material-icons"> account_circle </span>
           <span>Account</span>
         </div>
-        <div class="logout">
+        <div class="d-flex">
           <span class="material-icons"> logout </span>
           <span>Logout</span>
         </div>
@@ -99,7 +103,9 @@
               <span class="total">40</span>
               <div class="issue-details">
                 <span class="heading">Insufficiency Cases</span>
-                <span class="heading-info">Cases where insufficient raised</span>
+                <span class="heading-info"
+                  >Cases where insufficient raised</span
+                >
               </div>
             </div>
             <div class="right">
@@ -111,7 +117,9 @@
               <span class="total">20</span>
               <div class="issue-details">
                 <span class="heading">Verification Alerts</span>
-                <span class="heading-info">Cases with verification status orange & red</span>
+                <span class="heading-info"
+                  >Cases with verification status orange & red</span
+                >
               </div>
             </div>
             <div class="right">
@@ -123,8 +131,10 @@
               <span class="total">20</span>
               <div class="issue-details">
                 <span class="heading">Missing Documents</span>
-                <span class="heading-info">List of all the employees where documents are not
-                  submitted</span>
+                <span class="heading-info"
+                  >List of all the employees where documents are not
+                  submitted</span
+                >
               </div>
             </div>
             <div class="right">
