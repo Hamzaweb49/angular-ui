@@ -71,42 +71,6 @@
         <p class="title">Insights Dashboard</p>
         <span class="material-icons"> more_vert </span>
       </div>
-      <div class="dashboard-data">
-        <a class="custom-link dashboard-boxes" [routerLink]="'/dashboard/data'">
-          <div class="box" *ngFor="let item of dashboardData">
-            <span class="total">{{ item.total }}</span>
-            <span class="total-info">{{ item.totalInfo }}</span>
-            <div class="details">{{ item.details }}</div>
-          </div>
-        </a>
-      </div>
-      <div class="attention-cases">
-        <span class="section-title">NEEDS ATTENTION</span>
-        <div class="cases-issue">
-          <div class="issue" *ngFor="let item of attentionCasesData">
-            <div class="left">
-              <span class="total">{{ item.total }}</span>
-              <div class="issue-details">
-                <span class="heading">{{ item.heading }}</span>
-                <span class="heading-info">{{ item.headingInfo }}</span>
-              </div>
-            </div>
-            <div class="right">
-              <span class="cases-link">View Cases</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="all-cases-details">
-        <div class="closed-cases">
-          <span class="total-closed">200 Closed cases this year</span>
-          <span class="closed-cases-link">View closed cases</span>
-        </div>
-        <div class="all-cases">
-          <span class="total-cases">2560 All Cases</span>
-          <span class="all-cases-link">View all cases</span>
-        </div>
-      </div>
     </div>
   </div>
   <div class="screen-options">

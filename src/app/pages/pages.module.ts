@@ -15,9 +15,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterModule } from '@angular/router';
+import { DashboardDataComponent } from './dashboard-data/dashboard-data.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HomeComponent],
+  declarations: [DashboardComponent, HomeComponent, DashboardDataComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

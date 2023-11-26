@@ -128,11 +128,14 @@
   font-weight: 600;
 }
 
-.main-screen .dashboard-data{
+
+.main-screen .dashboard-data .dashboard-boxes{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .main-screen .dashboard-data .box{
